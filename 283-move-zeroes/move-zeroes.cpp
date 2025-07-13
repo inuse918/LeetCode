@@ -20,9 +20,10 @@ public:
         if ( nums.size() == 1 ) return ;
         for (int i = 0; i <nums.size(); i++){
             if (nums[i]!=0) {
-                temp = nums[i];
-                nums[i] = 0;
-                nums[ptr++] = temp;
+                // temp = nums[i];
+                // nums[i] = 0;
+                // nums[ptr++] = temp;
+                swap (nums[ptr++], nums[i]);
             }
         }
         
