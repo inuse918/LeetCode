@@ -1,0 +1,9 @@
+SELECT Y.NAME
+FROM  SALESPERSON Y
+WHERE Y.SALES_ID NOT IN (
+        SELECT B.SALES_ID
+        FROM   COMPANY A
+            , ORDERS B 
+        WHERE  A.COM_ID = B.COM_ID
+        AND    A.NAME = 'RED'
+    ) 
