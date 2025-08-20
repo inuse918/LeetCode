@@ -6,16 +6,22 @@ var createCounter = function(init) {
     let value = init;
     const ori = init;
     return {
-        increment() {
-            return ++value;
-        } ,
-        decrement() {
-            return --value;
-        } ,
-        reset() {
-            value = ori
-            return  value ;
-        }
+        // increment() {
+        //     return ++value;
+        // } ,
+        // decrement() {
+        //     return --value;
+        // } ,
+        // reset() {
+        //     value = ori
+        //     return  value ;
+        // }
+        
+        // using arrow function
+        increment:()=> ++value,
+        decrement:()=> --value,
+        reset:()=> value = ori,
+        
     };
 };
 
